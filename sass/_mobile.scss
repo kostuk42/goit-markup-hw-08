@@ -387,3 +387,58 @@ header {
          }
 
 }
+// customers
+.customers{
+	padding: 60px 0;
+    &-icon  {
+	fill: currentColor;
+            }
+&-list  {
+	    
+            display: flex;
+            flex-wrap: wrap; 
+            margin: -15px;
+
+          & li {
+              
+              margin: 15px;
+              width: 100%;
+          }
+
+           & a {
+	       width: inherit;
+	       height: 90px;
+           
+	       border: 1px solid; 
+	       border-radius: 4px;
+	       color: #AFB1B8;
+               }
+
+           & a:hover,
+           & a:focus {
+	       color: $hover-web-color;
+                     }
+	        }
+            
+     }
+     @media screen and (min-width: 479px) {
+           .customers-list li {
+               width: 208px;
+           }     
+       }
+       @media screen and (min-width: 480px) and (max-width: 767px) {
+           .customers-list li {
+               width: 208px;
+           }  
+        
+        } 
+        @media screen and (min-width: 768px) {
+           .customers-list li {
+               width: 224px;
+           }     
+           .customers-list {
+               justify-content: center;
+           }
+       }
+           
+       

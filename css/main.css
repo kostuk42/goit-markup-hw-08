@@ -91,7 +91,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -333,14 +333,13 @@ body {
 @media screen and (max-width: 479px) {
   .main-blocks-centred {
     width: 100%;
-    max-width: 449px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .main-blocks-centred {
     max-width: none;
-    width: 450px;
+    width: 480px;
   }
 }
 
@@ -905,6 +904,59 @@ body {
   }
   .team-list .team-list-item {
     width: 270px;
+  }
+}
+
+.customers {
+  padding: 60px 0;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.customers-list li {
+  margin: 15px;
+  width: 100%;
+}
+
+.customers-list a {
+  width: inherit;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+
+.customers-list a:hover,
+.customers-list a:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 479px) {
+  .customers-list li {
+    width: 208px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .customers-list li {
+    width: 208px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list li {
+    width: 224px;
+  }
+  .customers-list {
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

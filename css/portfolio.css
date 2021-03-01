@@ -92,7 +92,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -334,14 +334,13 @@ body {
 @media screen and (max-width: 479px) {
   .main-blocks-centred {
     width: 100%;
-    max-width: 449px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .main-blocks-centred {
     max-width: none;
-    width: 450px;
+    width: 480px;
   }
 }
 
