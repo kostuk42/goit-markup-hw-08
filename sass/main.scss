@@ -1,0 +1,31 @@
+@import './base/normalize/';
+
+// utils
+@import './utils/vars';
+@import './utils/defaults';
+@import './utils/visually-hidden';
+@import './utils/flex-blocks-centred';
+@import './utils/main-blocks-centred';
+@import './base/mixins/';
+
+// components
+@import './components/buttons';
+@import './components/fontsize-header-footer-advantage';
+@import './components/font-caps';
+@import './components/button-style';
+@import './components/section-title';
+@import './components/socials';
+
+
+@import './components/logo';
+//layout
+@import './mobile';
+// @import './layout/modal';
+// @import './layout/header';
+
+// @import './layout/hero';
+// @import './layout/advantages';
+// @import './layout/business';
+// @import './layout/team';
+// @import './layout/customers';
+// @import './layout/footer';

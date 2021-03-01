@@ -1,0 +1,38 @@
+.team {
+	background-color: $background-team-button-color;
+	line-height: 1.19;
+	text-align: center;
+	color: $font-description-item-color;
+	padding: 94px 0;
+
+	&-list {
+	padding-top: 50px;
+   
+      &>li:not(:first-child) {
+	  margin-left: 30px;
+	  }
+    }
+	
+	&-item {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	background: $accent-color;
+    }
+	
+	& b {
+	display: block;
+	color: $font-heading-color;
+    }
+    & p {
+	 margin-top: 10px;
+	 margin-bottom: 16px;	
+    }	
+}
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+.business{
+	margin-top: 50px;
+	padding-bottom: 94px;
+	
+      &-list{
+    	    & p {
+	        position: absolute;
+	        bottom: 0;
+	        width: 100%;
+	        background: rgba(47, 48, 58, 0.8);
+	        height: 70px;
+            color: $accent-color;
+			    }
+            & li{
+            position: relative;
+                }
+            & li:not(:last-child){
+	        margin-right: 30px;
+                }
+            }
+        }

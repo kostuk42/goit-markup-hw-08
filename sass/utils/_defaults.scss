@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+:visited {
+	color: inherit;	
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;	
+}
+a, button, input, textarea {
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: $font-family, sans-serif;
+	font-style: $font-style;
+	letter-spacing: 0.03em;
+	font-weight: normal;
+	
+	font-size: $fontsize-team-projectsdesc-buttons;
+}

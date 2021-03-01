@@ -1,0 +1,25 @@
+.customers{
+	padding: 94px 0;
+    &-icon  {
+	fill: currentColor;
+            }
+    &-list  {
+	       margin-top: 50px;
+       
+           &>li:not(:first-child) {
+	       margin-left: 30px;
+                                  }
+           & a {
+	       width: 170px;
+	       height: 90px;
+	       border: 1px solid; 
+	       border-radius: 4px;
+	       color: #AFB1B8;
+               }
+
+           & a:hover,
+           & a:focus {
+	       color: $hover-web-color;
+                     }
+	        }
+     }

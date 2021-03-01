@@ -1,0 +1,73 @@
+%icon-size { 
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+
+}
+
+@mixin socials-list ($color-icon, $bcg-color) {
+    
+    display: flex;
+	justify-content: center;
+	text-align: center;	
+    a {
+	@extend %icon-size;
+	color: $color-icon;
+	background-color: $bcg-color;
+      }
+    
+    &>li:not(:first-child) 
+    {
+	margin-left: 10px;
+    }
+    a:hover,
+    a:focus {
+        background-color: $hover-web-color;
+        color: $accent-color;
+    }
+}
+
+@mixin button-maker ($width: 200px, $height: 50px, $color-font: #ffff, $bcg-color: #2196F3) {
+   
+  min-width: $width;
+  height:$height;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;	
+  color: $color-font;
+  background: $bcg-color;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 1.62;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@mixin screen($size) {
+    $desktop: '(min-width: 1024px)'; // Переменная со значением desktop размера
+    $tablet: '(min-width: 768px)'; // Переменная со значением tablet размера
+    @if $size == desktop {
+        @media only screen and #{$desktop} {
+            @content;
+        }
+    } @else if $size == tablet {
+        @media only screen and #{$tablet} {
+            @content;
+        }
+    }
+}
+// Исспользование
+// .wrapper {
+//   margin: 0 auto;
+//   width: 100%;
+//   @include screen('tablet') {
+//     width: 90%;
+//   }
+//   @include screen('desktop') {
+//     width: 85%;
+//   }
+// }

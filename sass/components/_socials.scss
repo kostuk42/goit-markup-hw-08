@@ -1,0 +1,14 @@
+.icon-social {
+	@extend %icon-size;
+	padding: 12px 0px;
+	fill: currentColor;
+}
+.socials-list-main {
+    @include socials-list(#AFB1B8, transparent);
+}
+.socials-list-footer {
+    @include socials-list($accent-color, #44454E);
+}
+
+
+ 

@@ -1,0 +1,71 @@
+.footer-container {	
+	background-color: $background-footer-hero-color;
+	padding: 60px 0px;
+}
+footer {	
+	line-height: 1.71;
+	font-style: $font-style;
+	$font-heading-color: white;	
+
+        & li:not(:last-child){
+	    margin-bottom: 9px;
+      }
+ }
+.logo-social-title {
+	display: flex;
+	align-items: baseline;
+}
+
+address {
+	font-style: inherit;
+	color: $accent-color;
+	margin-right: 78px;
+}
+
+.social-heading {
+	color: $accent-color;
+	margin-left: 156px;
+	
+}
+.address-social {
+	display: flex;
+}
+
+.contacts-footer {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.email-footer {
+
+    width: 358px;
+    height: 50px;
+    margin-left: 93px;
+	padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.send-btn{
+
+	min-width: 200px;
+    height: 50px;
+	margin-left: 10px;
+	line-height: 1.9;
+	
+	background: $hover-web-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $accent-color;
+
+}
+
+.icon-send {
+	margin-left: 10px;
+	fill: currentColor;
+}
