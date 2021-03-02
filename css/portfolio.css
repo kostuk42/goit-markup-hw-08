@@ -463,7 +463,6 @@ body {
   border: 0px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 10px;
   line-height: 1.9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -573,7 +572,7 @@ body {
 
 .logo-footer {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -813,14 +812,15 @@ body {
 .footer-container {
   background-color: #2f303a;
   padding: 60px 0px;
-}
-
-footer {
   line-height: 1.71;
   font-style: normal;
 }
 
-footer li:not(:last-child) {
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+address li:not(:last-child) {
   margin-bottom: 9px;
 }
 

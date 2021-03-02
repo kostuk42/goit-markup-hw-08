@@ -1,11 +1,17 @@
 .footer-container {	
 	background-color: $background-footer-hero-color;
 	padding: 60px 0px;
-}
-footer {	
+
 	line-height: 1.71;
 	font-style: $font-style;
 	$font-heading-color: white;	
+}
+.logo-footer {
+	margin-bottom: 20px;
+}
+
+address {	
+	
 
         & li:not(:last-child){
 	    margin-bottom: 9px;

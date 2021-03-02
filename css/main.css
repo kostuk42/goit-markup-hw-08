@@ -462,7 +462,6 @@ body {
   border: 0px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 10px;
   line-height: 1.9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -572,7 +571,7 @@ body {
 
 .logo-footer {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -917,6 +916,7 @@ body {
 
 .customers-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: -15px;
 }
@@ -955,8 +955,128 @@ body {
   .customers-list li {
     width: 224px;
   }
-  .customers-list {
-    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list li {
+    width: 170px;
+  }
+}
+
+.footer-container {
+  background-color: #2f303a;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  line-height: 1.71;
+  font-style: normal;
+  text-align: center;
+}
+
+address {
+  font-style: inherit;
+  color: #ffffff;
+}
+
+address li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.logo-social-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.send-btn {
+  display: block;
+  margin: 20px auto 0;
+}
+
+.social-heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.logo-address,
+.social-block {
+  margin-bottom: 60px;
+}
+
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-footer {
+  width: 450px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  background: #2F303A;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+@media screen and (max-width: 479px) {
+  .email-footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-address,
+  .social-block {
+    width: 50%;
+  }
+  .send-block {
+    width: 100%;
+  }
+  .social-block {
+    margin-top: 12px;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-footer {
+    width: 358px;
+  }
+  footer {
+    text-align: left;
+  }
+  .socials-list-footer {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-address,
+  .social-block {
+    width: 25%;
+  }
+  .send-block {
+    width: 50%;
+  }
+  .social-block {
+    margin-top: 12px;
+  }
+  .send-btn {
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+  footer {
+    padding-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
