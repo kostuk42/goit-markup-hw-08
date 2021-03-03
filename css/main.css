@@ -1067,8 +1067,6 @@ address li:not(:last-child) {
   }
   .send-block {
     width: 50%;
-  }
-  .social-block {
     margin-top: 12px;
   }
   .send-btn {

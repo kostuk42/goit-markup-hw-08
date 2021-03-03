@@ -56,7 +56,12 @@
                     </a>
                 </li>
             </ul>
-        
+        <button class="burger-btn">
+            <svg class="icon-burger">
+                <use href="./img/sprite.svg#icon-burger">
+                </use>
+            </svg>
+        </button>
         </header>
     </div>
     
@@ -66,11 +71,11 @@
             <!-- фильтр работ -->
             <h2 hidden>Портфолио</h2>
             <ul class="filter flex-blocks-centred main-blocks-centred">
-                <li><button type="button" class="filter-btn button-style">Все</button></li>
-                <li><button type="button" class="filter-btn button-style">Веб-сайты</button></li>
-                <li><button type="button" class="filter-btn button-style">Приложения</button></li>
-                <li><button type="button" class="filter-btn button-style">Дизайн</button></li>
-                <li><button type="button" class="filter-btn button-style">Маркетинг</button></li>
+                <li><button type="button" class="filter-btn">Все</button></li>
+                <li><button type="button" class="filter-btn">Веб-сайты</button></li>
+                <li><button type="button" class="filter-btn">Приложения</button></li>
+                <li><button type="button" class="filter-btn">Дизайн</button></li>
+                <li><button type="button" class="filter-btn">Маркетинг</button></li>
             </ul>
             
             <!-- фото работ и описание -->
@@ -202,12 +207,9 @@
     </main>
     
     <div class="footer-container">
-        <footer class="fontsize-header-footer-advantage main-blocks-centred">
-            <div class="logo-social-title">
+        <footer class="main-blocks-centred">
+            <div class="logo-address">
                 <a class="logo logo-footer" href=""><span>Web</span>Studio</a>
-                <h3 class="font-caps social-heading">присоединяйтесь</h3>
-            </div>
-            <div class="address-social">
                 <address>
                     <ul>
                         <li>г. Киев, пр-т Леси Украинки, 26</li>
@@ -215,9 +217,9 @@
                         <li><a class="contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
-        
-        
-        
+            </div>
+            <div class="social-block">
+                <h3 class="font-caps social-heading">присоединяйтесь</h3>
                 <ul class="socials-list-footer">
                     <li>
                         <a href="">
@@ -252,6 +254,23 @@
                         </a>
                     </li>
                 </ul>
+    
+            </div>
+            <div class="send-block">
+                <h3 class="font-caps social-heading">подпишитесь на рассылку</h3>
+                <form>
+                    <input class="email-footer" type="email" name="email" placeholder="E-mail" />
+                    <button type="submit" class="send-btn">
+                        <span class="flex-blocks-centred">
+                            <span class="send">Подписаться</span>
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./img/sprite.svg#icon-send">
+                                </use>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+    
             </div>
         </footer>
     </div>
