@@ -1,6 +1,4 @@
-
-
- .icon-mail {
+.icon-mail {
 	width: 12px;
 	height: 10px;
 	margin-right: 10px;
@@ -16,11 +14,20 @@
 .icon-burger {
 	width: 40px;
 	height: 40px;
-	fill: #212121;
+	fill: currentColor;
 }
 .burger-btn {
    border: none;
    background: transparent;
+   color: #212121;
+
+   &:hover,
+   &:focus {
+       color: #2196F3;
+   }
+   @media screen and (min-width: 768px){
+       display: none;
+   }
 }
 
 .header-container { 
@@ -120,16 +127,7 @@ nav {
 }
 		
 	}
-.burger-btn {
-   border: none;
-   background: transparent;
-}
-.icon-burger {
-	width: 40px;
-	height: 40px;
-	fill: #212121;
 
-}
 
     
 
@@ -149,5 +147,4 @@ nav {
 header {
 	padding: 25px 0;
 }
-
 }

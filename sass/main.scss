@@ -12,24 +12,16 @@
 @import './components/buttons';
 @import './components/fontsize-header-footer-advantage';
 @import './components/font-caps';
-@import './components/button-style';
 @import './components/section-title';
 @import './components/socials';
-
-
 @import './components/logo';
-
-//layout
-@import './mobile';
 @import './components/mobile-menu';
-
-
-// @import './layout/modal';
-// @import './layout/header';
-
-// @import './layout/hero';
-// @import './layout/advantages';
-// @import './layout/business';
-// @import './layout/team';
-// @import './layout/customers';
-// @import './layout/footer';
+//layout
+@import './layout/modal';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/business';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';

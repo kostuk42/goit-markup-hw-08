@@ -1,6 +1,13 @@
-.business{
-	margin-top: 50px;
-	padding-bottom: 94px;
+.business {
+    display: none;
+}
+
+  @media screen and (min-width: 1200px) {
+
+    .business{
+        display: block;
+	// margin-top: 50px;
+	padding: 94px 0;
 	
       &-list{
     	    & p {
@@ -19,3 +26,4 @@
                 }
             }
         }
+}

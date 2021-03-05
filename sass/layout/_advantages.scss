@@ -3,8 +3,7 @@
 .advantages {
 	padding: 60px 0;	
 	}
-    // .advantages-list li {
-	// width: 100%;
+    
 
 .advantages-list li:not(:last-child){
 	margin-bottom: 30px;
@@ -35,28 +34,28 @@
 
     .advantages-list li {
         width: 354px;
-
+        
     }
     
     .advantages-list-item:nth-child(even) {
-        padding-left: 15px;
+        margin-left: 15px;
     }
     .advantages-list-item:nth-child(odd) {
-        padding-right: 15px;
+        margin-right: 15px;
     }
 
     .advantages-list {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap; 
+        // border: tomato solid 2px; 
     }
-    .advantages-list li {
-        width: 50%;
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {
     .advantages {
-	padding: 94px 0 0 0;	
+	padding-top: 94px;	
+    padding-bottom: 0;
 	}
     .advantages-list {
 	justify-content: center; 
@@ -67,10 +66,11 @@
 
 .advantages-list .advantages-list-item {
 	width: 270px;
-    padding: 0;
+    margin: 0;
 }
 .advantages-list li:not(:last-child){
 	margin-right: 30px;
     
   }  
 }
+

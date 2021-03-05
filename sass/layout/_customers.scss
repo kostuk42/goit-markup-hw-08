@@ -1,17 +1,25 @@
 .customers{
-	padding: 94px 0;
+	padding: 60px 0;
     &-icon  {
 	fill: currentColor;
             }
-    &-list  {
-	       margin-top: 50px;
-       
-           &>li:not(:first-child) {
-	       margin-left: 30px;
-                                  }
+&-list  {
+	    
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            margin: -15px;
+
+          & li {
+              
+              margin: 15px;
+              width: 100%;
+          }
+
            & a {
-	       width: 170px;
+	       width: inherit;
 	       height: 90px;
+           
 	       border: 1px solid; 
 	       border-radius: 4px;
 	       color: #AFB1B8;
@@ -22,4 +30,21 @@
 	       color: $hover-web-color;
                      }
 	        }
+            
+     }
+    
+     .customers-list li {
+         @media screen and (min-width: 479px) {
+             width: 208px;
+         }
+         @media screen and (min-width: 480px) and (max-width: 767px) {
+             width: 208px;
+         }
+         @media screen and (min-width: 768px) {
+             width: 224px;
+         }
+         @media screen and (min-width: 1200px) {
+             width: 170px;
+         }
+         
      }
