@@ -63,20 +63,26 @@
             </svg>
         </button>
     <div class="mobile-menu" data-menu>
+
         <button type="button" class="mobile-close-btn" data-menu-close>
             <svg class="close-burger">
                 <use href="./img/sprite.svg#close-burger">
                 </use>
             </svg>
         </button>
+
         <ul class="mobile-menu-list font-mob-menu">
             <li class="studio-mob"><a href="./index.html" class="mobile-menu-link">Студия</a></li>
             <li><a href="./portfolio.html" class="mobile-menu-link">Портфолио</a></li>
             <li><a href="" class="mobile-menu-link">Контакты</a></li>   
         </ul>
-        
-            <a class="font-mob-menu tel-mob" href="tel:+380961111111">+38 096 111 11 11</a>
-            <a class="font-mob-menu mail-mob" href="mailto:info@devstudio.com">info@devstudio.com</a>        
+      <div>
+        <ul class="mobile-contacts-list">
+            <li class="mobile-contacts-item"><a class="font-mob-menu tel-mob" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts-item"><a class="font-mob-menu mail-mob" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+            
+                    
         
         <ul class="mobile-social-list">
             <li><a href="mobile-social-link">Instagram</a></li>
@@ -84,10 +90,11 @@
             <li><a href="mobile-social-link">Facebook</a></li>
             <li><a href="mobile-social-link">LinkedIn</a></li>
         </ul>
-
+      </div>
     </div>
     </header>
   </div>
+ <main>
     <!--  -->
     <section class="hero">
     
@@ -146,15 +153,39 @@
         <ul class="business-list flex-blocks-centred">
             
             <li>
-                <img src="./img/main/algorythm.png" width="370" alt="">
+                <picture>
+                    <source srcset="
+                                                ./img/what-we-do/box1.webp 1x,
+                                                ./img/what-we-do/box1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+                                                ./img/what-we-do/box1.jpg 1x,
+                                                ./img/what-we-do/box1@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img class="we-do-img" src="./img/what-we-do/box1.jpg" width="370" height="294" alt="руки на клавиатуре">
+                </picture>
                 <p class="font-caps flex-blocks-centred">десктопные приложения</p>
             </li>
             <li>
-                <img src="./img/main/phone.png" width="370" alt="">
+                <picture>
+                    <source srcset="
+                                                ./img/what-we-do/box2.webp 1x,
+                                                ./img/what-we-do/box2@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+                                                ./img/what-we-do/box2.jpg 1x,
+                                                ./img/what-we-do/box2@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img class="we-do-img" src="./img/what-we-do/box2.jpg" width="370" height="294" alt="руки держат телефон">
+                </picture>
                 <p class="font-caps flex-blocks-centred">мобильные приложения</p>
             </li>
             <li>
-                <img src="./img/main/paint.png" width="370" alt="">
+                <picture>
+                    <source srcset="
+                                                ./img/what-we-do/box3.webp 1x,
+                                                ./img/what-we-do/box3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+                                                ./img/what-we-do/box3.jpg 1x,
+                                                ./img/what-we-do/box3@2x.jpg 2x" media="(min-width: 1200px)">
+                    <img class="we-do-img" src="./img/what-we-do/box3.jpg" width="370" height="294" alt="планшет с цветовой гаммой">
+                </picture>
                 <p class="font-caps flex-blocks-centred">дизайнерские решения</p>
             </li>
         </ul>
@@ -166,7 +197,30 @@
         <div class="team-list-wrap main-blocks-centred">
         <ul class="team-list">
             <li class="team-list-item">
-                <img src="./img/main/lukyanenko.jpg" alt="Лукьяненко">
+                <picture>
+                    <source srcset="
+                                            ./img/our-team/member1-desktop.webp 1x,
+                                            ./img/our-team/member1-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                    <source srcset="
+                                            ./img/our-team/member1-desktop.jpg 1x,
+                                            ./img/our-team/member1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                
+                    <source srcset="
+                                            ./img/our-team/member1-tablet.webp 1x,
+                                            ./img/our-team/member1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member1-tablet.jpg 1x,
+                                            ./img/our-team/member1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member1-mobile.webp 1x,
+                                            ./img/our-team/member1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                    <source srcset="
+                                            ./img/our-team/member1-mobile.jpg 1x,
+                                            ./img/our-team/member1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                
+                    <img src="./img/our-team/member1-mobile.jpg" alt="фотография члена команды">
+                </picture>
                 <div class="team-item">
                     <b>Игорь Демьяненко</b>
                     <p>Product Designer</p>
@@ -207,7 +261,29 @@
                 </div>
             </li>
             <li class="team-list-item">
-                <img src="./img/main/repina.jpg" alt="Репина">
+                <picture>
+                    <source srcset="
+                                            ./img/our-team/member2-desktop.webp 1x,
+                                            ./img/our-team/member2-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                    <source srcset="
+                                            ./img/our-team/member2-desktop.jpg 1x,
+                                            ./img/our-team/member2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                
+                    <source srcset="
+                                            ./img/our-team/member2-tablet.webp 1x,
+                                            ./img/our-team/member2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member2-tablet.jpg 1x,
+                                            ./img/our-team/member2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member2-mobile.webp 1x,
+                                            ./img/our-team/member2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                    <source srcset="
+                                            ./img/our-team/member2-mobile.jpg 1x,
+                                            ./img/our-team/member2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                    <img src="./img/our-team/member2-mobile.jpg" alt="фотография члена команды">
+                </picture>
                 <div class="team-item">
                     <b>Ольга Репина</b>
                     <p>Frontend Developer</p>
@@ -248,7 +324,30 @@
                 </div>
             </li>
             <li class="team-list-item">
-                <img src="./img/main/tarasov.jpg" alt="Тарасов">
+                <picture>
+                    <source srcset="
+                                            ./img/our-team/member3-desktop.webp 1x,
+                                            ./img/our-team/member3-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                    <source srcset="
+                                            ./img/our-team/member3-desktop.jpg 1x,
+                                            ./img/our-team/member3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                
+                    <source srcset="
+                                            ./img/our-team/member3-tablet.webp 1x,
+                                            ./img/our-team/member3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member3-tablet.jpg 1x,
+                                            ./img/our-team/member3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member3-mobile.webp 1x,
+                                            ./img/our-team/member3-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                    <source srcset="
+                                            ./img/our-team/member3-mobile.jpg 1x,
+                                            ./img/our-team/member3-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                
+                    <img src="./img/our-team/member3-mobile.jpg" alt="фотография члена команды">
+                </picture>
                 <div class="team-item">
                     <b>Николай Тарасов</b>
                     <p>Marketing</p>
@@ -289,7 +388,30 @@
                 </div>
             </li>
             <li class="team-list-item">
-                <img src="./img/main/ermakov.jpg" alt="Ермаков">
+                <picture>
+                    <source srcset="
+                                            ./img/our-team/member4-desktop.webp 1x,
+                                            ./img/our-team/member4-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                    <source srcset="
+                                            ./img/our-team/member4-desktop.jpg 1x,
+                                            ./img/our-team/member4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                
+                    <source srcset="
+                                            ./img/our-team/member4-tablet.webp 1x,
+                                            ./img/our-team/member4-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member4-tablet.jpg 1x,
+                                            ./img/our-team/member4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                            ./img/our-team/member4-mobile.webp 1x,
+                                            ./img/our-team/member4-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                    <source srcset="
+                                            ./img/our-team/member4-mobile.jpg 1x,
+                                            ./img/our-team/member4-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                
+                    <img src="./img/our-team/member4-mobile.jpg" alt="фотография члена команды">
+                </picture>
                 <div class="team-item">
                     <b>Михаил Ермаков</b>
                     <p>UI Designer</p>
@@ -527,6 +649,7 @@
         </form>
     </div>
 </div>
+</main>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
 </body>
