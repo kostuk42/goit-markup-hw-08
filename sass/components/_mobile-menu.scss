@@ -35,7 +35,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-right: 83px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 420px) {
         padding-left: 8vw;
         padding-top: 6vh;
         padding-bottom: 6vh;
@@ -43,12 +43,13 @@
     }
     top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-150%);
     width: 100%;
     height: 100vh;
-    max-width: 480px;
+    max-width: 767px;
     background-color: white;
     transition: transform 500ms linear;
+    overflow: scroll;
 
 
 }
