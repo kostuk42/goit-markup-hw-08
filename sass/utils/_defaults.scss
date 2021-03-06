@@ -37,3 +37,6 @@ body {
 	
 	font-size: $fontsize-team-projectsdesc-buttons;
 }
+body.modal-open {
+    overflow: hidden;
+  }
