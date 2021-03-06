@@ -721,23 +721,18 @@ body.modal-open {
   max-width: 450px;
   height: 100%;
   max-height: 609px;
-  overflow: scroll;
+  overflow-y: auto;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
-  .backdrop .modal {
-    width: calc(100% - 30px);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .backdrop .modal {
     max-width: 528px;
     height: 581px;
+    overflow-y: visible;
   }
 }
 
@@ -1151,6 +1146,9 @@ textarea[placeholder] {
     display: flex;
     flex-wrap: wrap;
   }
+  .advantages-list h3 {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1251,6 +1249,12 @@ textarea[placeholder] {
 
 .customers {
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding: 94px 0;
+  }
 }
 
 .customers-icon {

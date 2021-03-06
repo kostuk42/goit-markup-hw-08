@@ -19,17 +19,14 @@
         max-width: 450px;
         height: 100%;
         max-height: 609px;
-        overflow: scroll;
+        overflow-y: auto;
 
-        @media screen and (max-width: 479px) {
-            width: calc(100% - 30px);
-            
-        }
         
     
         @media screen and (min-width: 1200px) {
            max-width: 528px;
             height: 581px;
+            overflow-y: visible;
         }
         
     

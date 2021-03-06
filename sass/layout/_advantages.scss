@@ -47,7 +47,10 @@
     .advantages-list {
         display: flex;
         flex-wrap: wrap; 
-        // border: tomato solid 2px; 
+         
+        & h3{
+        text-align: left; 
+             }
     }
     
 }
