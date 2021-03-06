@@ -656,7 +656,6 @@ body {
 
 .mobile-social-list {
   display: flex;
-  justify-content: space-between;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -675,9 +674,16 @@ body {
 }
 
 .mobile-social-list li:not(:last-child) {
-  padding-right: 2vw;
-  margin-right: 2vw;
+  padding-right: calc((100vw - 420px)/6);
+  margin-right: calc((100vw - 420px)/6);
   border-right: 1px solid #2196F3;
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-social-list li:not(:last-child) {
+    padding-right: calc((100vw - 267px)/4);
+    margin-right: calc((100vw - 267px)/4);
+  }
 }
 
 .mobile-menu.is-open {

@@ -95,10 +95,12 @@ color: #757575;
 
    
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     @media screen and (max-width: 420px) {
      flex-wrap: wrap;
+     
     }
+
     
     font-weight: 500;
     font-size: 18px;
@@ -109,9 +111,14 @@ color: #757575;
     & a {color: #2196F3;}
 
     & li:not(:last-child) {
-        padding-right: 2vw;
-        margin-right: 2vw;
+        padding-right: calc((100vw - 420px)/6);
+        margin-right: calc((100vw - 420px)/6);
         border-right: 1px solid #2196F3;
+        @media screen and (max-width: 420px){
+            
+         padding-right: calc((100vw - 267px)/4);
+        margin-right: calc((100vw - 267px)/4);   
+        }
      }
  
     }
