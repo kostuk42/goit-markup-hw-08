@@ -641,6 +641,7 @@ body.modal-open {
 
 .tel-mob {
   margin-bottom: 20px;
+  margin-top: 33px;
 }
 
 @media screen and (max-width: 420px) {
@@ -847,7 +848,7 @@ textarea[placeholder] {
   content: "";
   display: inline-block;
   width: 16px;
-  height: 16px;
+  height: 15px;
   margin-right: 7px;
   background-image: url("../img/icon-confirm.svg");
   background-position: center;
